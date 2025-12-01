@@ -70,6 +70,42 @@
 
         // --- DATA: EXTENSIVE FOOD DATABASE (Calories per 100g) ---
         const FOOD_DATABASE = [
+            // --- TIFFINS (SOUTH INDIAN BREAKFAST) ---
+            { id: 200, name: "Idli (Steamed)", category: "Tiffins", cal: 135, pro: 7, carbs: 25, fat: 0.5, fiber: 1.5, icon: "🍥" },
+            { id: 201, name: "Plain Dosa", category: "Tiffins", cal: 168, pro: 3.9, carbs: 29, fat: 3.7, fiber: 1.2, icon: "🥞" },
+            { id: 202, name: "Masala Dosa (Potato)", category: "Tiffins", cal: 215, pro: 4.5, carbs: 33, fat: 7.5, fiber: 2, icon: "🌯" },
+            { id: 203, name: "Vada (Medhu, Fried)", category: "Tiffins", cal: 290, pro: 10, carbs: 20, fat: 20, fiber: 2.5, icon: "🍩" },
+            { id: 204, name: "Poori (Deep Fried)", category: "Tiffins", cal: 305, pro: 7, carbs: 45, fat: 12, fiber: 1.5, icon: "🥯" },
+            { id: 205, name: "Upma (Semolina)", category: "Tiffins", cal: 140, pro: 3.5, carbs: 22, fat: 4.5, fiber: 1.5, icon: "🥣" },
+            { id: 206, name: "Pongal (Ven Pongal)", category: "Tiffins", cal: 210, pro: 6, carbs: 28, fat: 8.5, fiber: 2.5, icon: "🍛" },
+            { id: 207, name: "Uttapam (Veg Topping)", category: "Tiffins", cal: 160, pro: 4, carbs: 30, fat: 3, fiber: 2, icon: "🍕" },
+            { id: 208, name: "Sambar (Lentil Stew)", category: "Tiffins", cal: 70, pro: 4, carbs: 12, fat: 1.5, fiber: 2.5, icon: "🥘" },
+            { id: 209, name: "Coconut Chutney", category: "Tiffins", cal: 250, pro: 3, carbs: 5, fat: 25, fiber: 4, icon: "🥥" },
+
+            // --- BISCUITS (FAMOUS BRANDS) ---
+            { id: 300, name: "Parle-G / Glucose", category: "Biscuits", cal: 460, pro: 6.5, carbs: 76, fat: 13, fiber: 1.5, icon: "🍪" },
+            { id: 301, name: "Marie Gold / Tea", category: "Biscuits", cal: 405, pro: 7.5, carbs: 77, fat: 8.5, fiber: 2.5, icon: "🍘" },
+            { id: 302, name: "Oreo / Cream Biscuit", category: "Biscuits", cal: 485, pro: 5, carbs: 68, fat: 20, fiber: 1.5, icon: "⚫" },
+            { id: 303, name: "Good Day / Butter", category: "Biscuits", cal: 510, pro: 6, carbs: 65, fat: 24, fiber: 1, icon: "🧈" },
+            { id: 304, name: "Digestive Biscuit", category: "Biscuits", cal: 470, pro: 7, carbs: 62, fat: 21, fiber: 3.5, icon: "🌾" },
+            { id: 305, name: "Bourbon / Choco", category: "Biscuits", cal: 490, pro: 5.5, carbs: 69, fat: 21, fiber: 2, icon: "🍫" },
+            { id: 306, name: "Rusk (Toast)", category: "Biscuits", cal: 410, pro: 9, carbs: 78, fat: 7, fiber: 3, icon: "🍞" },
+
+            // --- COMMON DAY-TO-DAY & FAST FOOD ---
+            { id: 400, name: "Tea (Milk & Sugar)", category: "Fast Food", cal: 75, pro: 3, carbs: 10, fat: 2.5, fiber: 0, icon: "☕" },
+            { id: 401, name: "Coffee (Milk & Sugar)", category: "Fast Food", cal: 85, pro: 3.5, carbs: 12, fat: 3, fiber: 0, icon: "☕" },
+            { id: 402, name: "Samosa (Potato)", category: "Fast Food", cal: 260, pro: 4, carbs: 32, fat: 14, fiber: 2, icon: "🥟" },
+            { id: 403, name: "Veg Puff / Pattie", category: "Fast Food", cal: 350, pro: 6, carbs: 35, fat: 22, fiber: 2, icon: "🥐" },
+            { id: 404, name: "Egg Puff", category: "Fast Food", cal: 310, pro: 10, carbs: 28, fat: 18, fiber: 1, icon: "🥐" },
+            { id: 405, name: "Maggi / Noodles (Cooked)", category: "Fast Food", cal: 160, pro: 3, carbs: 22, fat: 7, fiber: 1, icon: "🍜" },
+            { id: 406, name: "Pizza (Cheese)", category: "Fast Food", cal: 270, pro: 11, carbs: 33, fat: 10, fiber: 2, icon: "🍕" },
+            { id: 407, name: "Burger (Veg/Chicken)", category: "Fast Food", cal: 250, pro: 12, carbs: 30, fat: 10, fiber: 2, icon: "🍔" },
+            { id: 408, name: "Chocolate (Milk)", category: "Fast Food", cal: 535, pro: 7, carbs: 59, fat: 30, fiber: 3, icon: "🍫" },
+            { id: 409, name: "Ice Cream (Vanilla)", category: "Fast Food", cal: 207, pro: 3.5, carbs: 24, fat: 11, fiber: 0, icon: "🍦" },
+            { id: 410, name: "Coca Cola / Soda", category: "Fast Food", cal: 38, pro: 0, carbs: 10.6, fat: 0, fiber: 0, icon: "🥤" },
+            { id: 117, name: "Potato Chips (Lays Packet)", category: "Snacks", cal: 536, pro: 7, carbs: 53, fat: 35, fiber: 4, icon: "🥡" },
+            { id: 411, name: "Kurkure / Corn Puffs", category: "Snacks", cal: 550, pro: 6, carbs: 56, fat: 34, fiber: 2, icon: "🌶️" },
+
             // CARBOHYDRATES & GRAINS
             { id: 1, name: "White Rice (Cooked)", category: "Grains", cal: 130, pro: 2.7, carbs: 28, fat: 0.3, fiber: 0.4, icon: "🍚" },
             { id: 2, name: "Brown Rice (Cooked)", category: "Grains", cal: 111, pro: 2.6, carbs: 23, fat: 0.9, fiber: 1.8, icon: "🌾" },
@@ -131,16 +167,15 @@
             { id: 114, name: "Raisins", category: "Snacks", cal: 299, pro: 3, carbs: 79, fat: 0.5, fiber: 3.7, icon: "🍇" },
             { id: 115, name: "Dates", category: "Snacks", cal: 282, pro: 2.5, carbs: 75, fat: 0.4, fiber: 8, icon: "🌴" },
             { id: 116, name: "Dry Fruit Laddoo", category: "Snacks", cal: 480, pro: 10, carbs: 55, fat: 28, fiber: 6, icon: "🍡" },
-            { id: 117, name: "Potato Chips (Lays Packet)", category: "Snacks", cal: 536, pro: 7, carbs: 53, fat: 35, fiber: 4, icon: "🥡" },
         ];
 
-        const CATEGORIES = ["All", "Grains", "Protein", "Fruits", "Vegetables", "Dairy", "Snacks"];
+        const CATEGORIES = ["All", "Tiffins", "Grains", "Protein", "Fruits", "Vegetables", "Dairy", "Snacks", "Biscuits", "Fast Food"];
 
         function CalorieCalculator() {
             const [searchQuery, setSearchQuery] = useState("");
             const [selectedCategory, setSelectedCategory] = useState("All");
             const [dailyLog, setDailyLog] = useState([]);
-            const [calorieGoal, setCalorieGoal] = useState(2200);
+            const [calorieGoal, setCalorieGoal] = useState(1800);
             const [editingGoal, setEditingGoal] = useState(false);
 
             // --- DERIVED STATE ---
